@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="div-title">
+    <h1>TO DO LIST</h1>
+
+    </div>
+
+    <div class="div-input-1">
+        <h2>Create your to-do list below</h2>
+    </div>
+
+    <div class="todo-list">
+
+        <form method="post" action="{{ url_for('to_do_list') }}">
+            <input name="input1" id="input" type="text" placeholder="Type here e.g. buy bacon">
+        </form>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
